@@ -8,18 +8,19 @@ def main():
     # Python program to find the largest number among the three input numbers
 
     # Input
-    a = float(input("Enter first number: "))
-    b = float(input("Enter second number: "))
-    c = float(input("Enter third number: "))
+    firstNumber = float(input("Enter first number: "))
+    secondNumber = float(input("Enter second number: "))
+    thirdNumber = float(input("Enter third number: "))
 
-    if (a >= b) and (a >= c):
-        largest = a
-    elif (b >= a) and (b >= c):
-        largest = b
+    # process and output
+    if (firstNumber >= secondNumber) and (firstNumber >= thirdNumber):
+        largest = firstNumber
+    elif (secondNumber >= firstNumber) and (secondNumber >= thirdNumber):
+        largest = secondNumber
     else:
-        largest = c
+        largest = thirdNumber
 
-    print("The largest number is", largest)
+    print("The greatest number is", largest)
 
     print("\nDone.")
 
